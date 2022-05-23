@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    background: url(./image/bgimage.png) fixed no-repeat;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    z-index: 1111;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+
+.button button {
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background: #000;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 111;
+}
+
+.button button:hover {
+    color: #FF0000;
+    background: #ffffff;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content h2 {
+    max-width: 60%;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    bottom: 17%;
+}
+
+.left img {
+    max-width: 100px;
+}
+
+.right img {
+    max-width: 100%;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.content button {
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #C4C4C4;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+
+.container {
+    background: #C4C4C4;
+}
+
+.heading {
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+}
+
+.heading h3 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    max-width: 40%;
+    margin: auto;
+}
+
+.hire {
+    display: flex;
+    align-items: flex-end;
+}
+
+.image {
+    flex-basis: 50%;
+}
+
+.hire img {
+    max-width: 40%;
+}
+
+.option {
+    flex-basis: 50%;
+}
+
+.cat {
+    position: relative;
+    padding: 20px 10px;
+}
+
+.cat h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.cat p {
+    max-width: 60%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cat::after {
+    content: "";
+    border: 1px solid #FF0000;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+}
+
+@media only screen and (max-width: 1020px) {
+    header {
+        position: relative;
+    }
+    .link ul {
+        display: none;
+    }
+    .button button {
+        margin-left: 20px;
+    }
+    .banner {
+        display: block;
+        height: auto;
+    }
+    .content h2 {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .heading p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hire {
+        display: block;
+        text-align: center;
+    }
+    .hire img {
+        max-width: 100%;
+    }
+    .cat {
+        text-align: center;
+    }
+    .cat p {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .right {
+        top: -63%;
+    }
+    .content h2 {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+}
